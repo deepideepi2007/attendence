@@ -1,6 +1,7 @@
 # 🎓 Smart Study Planner Generator
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=render)](https://smart-study-planner-2k3j.onrender.com/)
 
 A premium, AI-powered study schedule generator designed to optimize exam preparation. This application uses a weighted scoring algorithm to prioritize subjects based on difficulty, exam proximity, and personal weaknesses, all wrapped in a stunning, high-performance "Glassmorphism" interface.
 
