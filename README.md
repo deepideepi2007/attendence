@@ -4,30 +4,43 @@
 
 A premium, AI-powered study schedule generator designed to optimize exam preparation. This application uses a weighted scoring algorithm to prioritize subjects based on difficulty, exam proximity, and personal weaknesses, all wrapped in a stunning, high-performance "Glassmorphism" interface.
 
-![Project Preview](https://via.placeholder.com/1200x600/05050f/00f3ff?text=Smart+Study+Planner+Generator+Phase+5)
-
-## ✨ Phase 5: Advanced Premium Experience
-The latest update introduces high-end interactive elements:
-- **3D Interactive Cards**: Hover over any result card to see it tilt in 3D space with a magnetic neon glow following your cursor.
-- **Intensity Heatmap**: The weekly plan dynamically color-codes days based on study load (Low, Medium, High, Max).
-- **Scroll Reveal**: Sections glide into view smoothly as you scroll, creating a cinematic experience.
-- **Micro-interactions**: Shimmering headers on success, pulsing break reminders, and an enhanced "Cyber" loading spinner.
-
 ## 🚀 Key Features
-- **Smart Priority Scoring**: Subjects are ranked using a data-science-driven algorithm (Urgency + Difficulty + Weakness).
-- **Live Countdown Timers**: Real-time ticking countdowns for every upcoming exam.
-- **Dynamic Timetables**: Generates both a detailed daily slot-by-slot schedule and a 7-day weekly overview.
-- **Live Break System**: A persistent banner that tracks your next scheduled break and provides productivity tips.
-- **Data Visualization**: Interactive Doughnut and Stacked Bar charts powered by Chart.js.
-- **Export Options**: Download your optimized plan as a CSV or print it directly from the browser.
 
-## 🛠️ Technology Stack
+### 🧠 Smart Priority Engine
+- **Weighted Scoring Algorithm**: Ranks subjects using three key metrics:
+  - **Urgency**: Proximity to the exam date.
+  - **Difficulty**: Complexity of the subject material.
+  - **Weakness**: Personal confidence level in the subject.
+- **Dynamic Time Allocation**: Automatically distributes available study hours based on subject priority.
+
+### 📊 Data Visualization & Insights
+- **Interactive Charts**: Visual breakdown of time distribution and score components using Chart.js.
+- **Live Countdown Timers**: Real-time tracking of exam deadlines.
+- **Weekly Intensity Heatmap**: A 7-day rotating schedule that color-codes days based on study load intensity.
+
+### 🎨 Premium Visual Experience
+- **Interactive 3D Elements**: Result cards feature 3D tilting and magnetic neon glow effects that follow your cursor.
+- **Scroll Reveal System**: Content glides smoothly into view as you navigate the dashboard.
+- **Productivity Reminders**: A live banner system that tracks your next scheduled break with helpful hydration and rest tips.
+
+## 🛠️ Core Procedure & Workflow
+
+The Smart Study Planner operates through a structured four-step process:
+
+1.  **Data Collection**: The user inputs subject details (name, difficulty, exam date) and daily availability preferences.
+2.  **Priority Calculation**: The `planner_engine.py` calculates a **Priority Score (0-100)** for each subject using a multi-factor weighted formula.
+3.  **Schedule Synthesis**:
+    *   **Daily Timetable**: Generates a slot-by-slot daily schedule including study sessions and optimized breaks.
+    *   **Weekly Roadmap**: Creates a balanced 7-day coverage plan to ensure no subject is neglected.
+4.  **Interactive Rendering**: The frontend (`script.js`) dynamically renders the results with staggered animations and real-time countdown updates.
+
+## 💻 Technology Stack
 - **Backend**: Python (Flask)
-- **Frontend**: HTML5, Vanilla CSS3 (Modern Grid/Flexbox), JavaScript (ES6+)
-- **Visuals**: Chart.js for data insights
-- **Deployment**: Optimized for Render (Blueprint compatible)
+- **Frontend**: HTML5, Vanilla CSS3 (Custom Design System), JavaScript (ES6+)
+- **Charts**: Chart.js
+- **Deployment**: Render (Blueprint optimized)
 
-## 📦 Installation & Local Setup
+## 📦 Local Installation
 
 1. **Clone the repository**:
    ```bash
@@ -35,32 +48,28 @@ The latest update introduces high-end interactive elements:
    cd Smart-Study-Planner-Generator
    ```
 
-2. **Set up a virtual environment (Optional but recommended)**:
+2. **Setup Virtual Environment**:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate  # Windows: venv\Scripts\activate
    ```
 
-3. **Install dependencies**:
+3. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run the application**:
+4. **Run**:
    ```bash
    python app.py
    ```
-   Access the app at `http://127.0.0.1:5000`.
+   Visit `http://127.0.0.1:5000` in your browser.
 
-## 🌐 Deployment (Render)
-This project is pre-configured for Render via `render.yaml`.
-1. Push your code to GitHub.
-2. Connect your repo to [Render](https://render.com).
-3. Select **Blueprint** deployment.
-4. Render will automatically deploy the app on the **Free Tier**.
-
-## 🤝 Contributing
-Contributions are welcome! If you have ideas for Phase 6 (e.g., Google Calendar integration, user accounts), feel free to open a Pull Request.
+## 🌐 Deployment to Render
+This repository includes a `render.yaml` file for instant deployment:
+1. Connect your GitHub repository to [Render](https://render.com).
+2. Choose the **Blueprint** option.
+3. Render will deploy the app on the **Free Tier** automatically.
 
 ---
-**Made with ❤️ by [Muhammad Awad](https://github.com/M-Awad-27)**
+**Developed by [Muhammad Awad](https://github.com/M-Awad-27)**
